@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ABOUT US | AC.LUXE BAGS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+      scroll-behavior:smooth;
+    }
+
+    body{
+      background:#f8f4ff;
+      color:rgb(51, 0, 62);;
+      overflow-x:hidden;
+    }
+
+    :root{
+      --primary:rgb(51, 0, 62);;
+      --secondary:#f755f7;
+      --light:#ffffff;
+      --soft:#efe6ff;
+      --dark:#2d1b4e;
+      --text:#5b5172;
+      --shadow:0 10px 30px rgba(139,92,246,0.15);
+    }
+
+    /* NAVIGATION */
+    nav{
+      position:fixed;
+      width:100%;
+      top:0;
+      z-index:1000;
+      background:rgba(240, 208, 255, 0);
+      backdrop-filter:blur(10px);
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:18px 8%;
+      box-shadow:0 4px 15px rgba(0, 0, 0, 0.736);
+    }
+
+    .logo{
+      font-weight:700;
+      color:var(--primary);
+      letter-spacing:1px;
+      font-size: 3em;
+    color: transparent;
+    background: linear-gradient(90deg, #ffdb63, #722fb0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Bodoni', serif;
+
+    }
+
+
+    .nav-links{
+      display:flex;
+      gap:28px;
+      list-style:none;
+    }
+
+    .nav-links a{
+      text-decoration:none;
+      color: rgb(0, 0, 0);
+      font-weight:500;
+      transition:0.3s;
+    }
+
+    .nav-links a:hover{
+      color: #ffcb51;
+    }
+
+    .nav-icons{
+      display:flex;
+      gap:18px;
+      font-size:18px;
+      color:rgb(0, 0, 0);
+      cursor:pointer;
+    }
+
+    .nav-icons a{
+       text-decoration:none;
+      color: rgb(0, 0, 0);
+      font-weight:500;
+      transition:0.3s;
+    }
+
+    .nav-icons a:hover{
+      color: #ffcb51;
+    }
+
+/* SEARCH BAR */
+.search-box{
+  position:relative;
+}
+
+.search-box input{
+  padding:10px 40px 10px 15px;
+  border-radius:30px;
+  border:1px solid #ccc;
+  outline:none;
+}
+
+.search-box i{
+  position:absolute;
+  right:15px;
+  top:50%;
+  transform:translateY(-50%);
+  color:#777;
+}
+
+
+    /* HERO SECTION */
+    .hero {
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+}
+
+@keyframes glow{
+    from{box-shadow:0 0 10px rgb(51, 0, 62);}
+    to{box-shadow:0 0 40px rgb(50, 0, 29);}
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 750px;
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+  color: #ffd563;
+  font-weight: 500;
+  line-height: 1.2;
+  font-family: 'twilight';
+  left: 50%;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  color: white;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.hero-content p {
+  color: #f5e9ff;
+  margin: 20px 0 35px;
+  font-size: 1.1rem;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 14px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.4s;
+}
+
+ .primary {
+  background: white;
+  color: #6f00ff;
+}
+
+.primary:hover {
+  transform: translateY(-5px);
+}
+
+.secondary {
+  border: 2px solid white;
+  color: white;
+}
+
+.secondary:hover {
+  background: white;
+  color: #6f00ff;
+}
+    .hero-image{
+      width:45%;
+      display:flex;
+      justify-content:center;
+      z-index:1;
+    }
+
+    .hero-image img{
+      width:100%;
+      max-width:520px;
+      animation:float 4s ease-in-out infinite;
+      filter:drop-shadow(0 15px 30px rgba(0,0,0,0.15));
+    }
+
+    @keyframes float{
+      0%,100%{transform:translateY(0);}
+      50%{transform:translateY(-15px);}
+    }
+
+     /* ABOUT SECTION */
+.about-section {
+      display: flex;
+      justify-content: right;
+      flex-wrap: wrap-reverse;
+      min-height: 50vh;
+      padding: 100px 100px;
+      background-color: #00000010;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.377);
+      left: 4%;
+    }
+
+  .highlight {
+      color: #a50097; /* caramel or accent color */
+      font-weight: bold;
+    }
+
+/* ABOUT US - TEAM */
+
+.team-section {
+    background-image: url('w22.png');
+    text-align: center;
+    flex-wrap: wrap-reverse;
+    min-height: 50vh;
+    box-shadow: 0 4px 12px rgb(0, 0, 0);
+}
+
+.team-section h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #21003b;
+    text-align: center;
+}
+
+.team-section .desc {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    font-size: 1.1rem;
+    opacity: 0.8;
+    text-align: center;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.team-card {
+  background: linear-gradient(135deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+  padding: 20px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px rgba(21, 0, 26, 0.781);
+}
+
+.team-card img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 16px;
+  box-shadow: 0 8px 20px rgba(195, 85, 255, 0.12);
+  border: 3px solid rgba(85,180,255,0.2);
+}
+
+.team-card h3 {
+  color: #330050d3;
+  font-size: 18px;
+  font-weight: 800;
+  margin: 12px 0 6px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.team-card p {
+  color: #5c3c64;
+  font-size: 14px;
+  margin: 0;
+}
+
+
+    /* NEWSLETTER */
+    .newsletter{
+      background:#efe6ff;
+      padding:80px 8%;
+      text-align:center;
+    }
+
+    .newsletter h2{
+      font-size:42px;
+      color:var(--dark);
+      margin-bottom:15px;
+    }
+
+    .newsletter p{
+      color:var(--text);
+      margin-bottom:30px;
+    }
+
+    .newsletter-form{
+      max-width:650px;
+      margin:auto;
+      display:flex;
+      background:white;
+      border-radius:50px;
+      overflow:hidden;
+      box-shadow:var(--shadow);
+    }
+
+    .newsletter-form input{
+      flex:1;
+      padding:18px 25px;
+      border:none;
+      outline:none;
+      font-size:16px;
+    }
+
+    .newsletter-form button{
+      border:none;
+      padding:18px 35px;
+      background:linear-gradient(to right,var(--primary),var(--secondary));
+      color:white;
+      font-weight:600;
+      cursor:pointer;
+    }
+
+    /* FOOTER */
+    footer{
+      background:#5c0a5f;
+      color:white;
+      padding:60px 8% 30px;
+    }
+
+    .footer-content{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+      gap:40px;
+      margin-bottom:40px;
+    }
+
+    .footer-box h3{
+      margin-bottom:20px;
+    }
+
+    .footer-box p,
+    .footer-box a{
+      color:#d8cfff;
+      text-decoration:none;
+      line-height:2;
+      font-size:14px;
+    }
+
+    .socials{
+      display:flex;
+      gap:15px;
+      margin-top:15px;
+    }
+
+    .socials i{
+      width:40px;
+      height:40px;
+      background:rgba(255,255,255,0.1);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      border-radius:50%;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    .socials i:hover{
+      background:var(--primary);
+    }
+
+    .copyright{
+      text-align:center;
+      border-top:1px solid rgba(255,255,255,0.1);
+      padding-top:20px;
+      color:#d8cfff;
+      font-size:14px;
+    }
+
+    /* MOBILE */
+    @media(max-width:991px){
+      .hero{
+        flex-direction:column;
+        text-align:center;
+      }
+
+      .hero-text,
+      .hero-image{
+        width:100%;
+      }
+
+      .hero-text{
+        margin-bottom:50px;
+      }
+
+      .hero-buttons{
+        justify-content:center;
+      }
+
+      .hero-text h1{
+        font-size:48px;
+      }
+    }
+
+    @media(max-width:768px){
+      nav{
+        flex-direction:column;
+        gap:15px;
+      }
+
+      .nav-links{
+        flex-wrap:wrap;
+        justify-content:center;
+      }
+
+      .hero-text h1{
+        font-size:40px;
+      }
+
+      .section-title h2,
+      .newsletter h2,
+      .banner h2{
+        font-size:32px;
+      }
+
+      .newsletter-form{
+        flex-direction:column;
+        border-radius:25px;
+      }
+
+      .newsletter-form button{
+        width:100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo">AC.LUXE BAGS</div>
+
+    <ul class="nav-links">
+      <li><a href="FAHHHH.html">Home</a></li>
+      <li><a href="ABOUT US.html">About Us</a></li>
+      <li><a href="FAHHHH.html">Products</a></li>
+      <li><a href="FAHHHH.html">Reviews</a></li>
+      <li><a href="FAHHHH.html">News</a></li>
+      <li><a href="FAHHHH.html">Contact</a></li>
+    </ul>
+
+<!-- SEARCH -->
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search bags...">
+    <i class="fas fa-search"></i>
+  </div>
+    
+     <div class="nav-icons">
+      <a href="#products"><i class="fas fa-heart"></i></a>
+      <a href="#cart"><i class="fas fa-shopping-bag"></i></a>
+      </div>
+  </nav>
+  <br><br>
+
+  <!-- HERO -->
+<section class="about-section">
+  <div class="about-content">
+    <h2>About Us</h2>
+    <p>
+      Welcome to <span class="highlight">AC LUXE STORE</span> – where function meets fashion. My name is CANEO, AMIE E. – The founder and the CEO of this company. We specialize in delivering top-quality products that make life better, easier, and more stylish. Our dedicated team is driven by innovation, customer care, and continuous improvement.
+    </p>
+    <p>
+      Since our beginning, we’ve remained committed to our values of integrity, creativity, and excellence. Thank you for being part of our journey!
+    </p>
+    <p>
+      <br>
+    <p>👜 <span class="highlight">Our Story</span><br>
+
+Our journey started back in 2010 with a simple idea: to create bags that are not only stylish but also practical and affordable. At that time, we were just a small stall in the local market, driven by passion and determination. We didn’t have much, but we believed that people deserved good-quality products without spending too much. Little by little, through hard work and genuine care for our customers, we began to earn their trust. <br><br> By 2013, we reached an important milestone: we were able to open our very first physical store. It was a big step for us and something we were truly proud of. With more space, we expanded our collection to include different kinds of bags, such as handbags, backpacks, and travel bags. We focused on creating products that people could use every day, making sure they were durable while still looking good.
+            In 2017, we decided to take another big step by bringing our business online. This allowed us to reach more customers beyond our local area and made it easier for people to access our products. It was a new challenge, but it also helped us grow even more. We listened closely to feedback and continued improving both our products and our service.
+           Our mission has always been simple: to provide bags that people can rely on in their everyday lives. We want our products to be useful, comfortable, and something our customers can feel good about using. For us, it’s not just about how a bag looks, but also how it helps make daily life a little easier.
+          As we continue to grow, we stay guided by the values that shaped us from the beginning. We believe in being honest with our customers, staying creative with our designs, and always doing our best in everything we create. We also do our part to support local artists and use materials that are better for the environment. No matter how much we grow, we remain committed to the same passion that started our journey.</h3><BR>
+</p>
+  </div>
+</section>
+
+
+<section id="team" class="team-section">
+  <BR><BR>
+    <center>
+    <h1>Meet the Team</h1>
+    <br>
+    <p class="about-desc">
+        Behind every great brand is a team of dedicated individuals who bring it to life.<br> At AC Luxe Bag Store, we are proud to have a talented and passionate team that works tirelessly to create the best products and provide exceptional service to our customers.
+    </p>
+<br><br>
+<div class="team-container">
+       
+        <!-- Developer 1 -->
+        <div class="team-card">
+            <img src="haha.jpg" alt="Developer 1">
+            <h3>CANEO, AMIE E.</h3>
+            <p>Front-End Developer</p>
+        </div>
+
+        <!-- Developer 2 -->
+        <div class="team-card">
+            <img src="LORIE.jpg" alt="Developer 2">
+            <h3>UMOSO, LORIE JEAN</h3>
+            <p>Product Designer</p>
+        </div>
+
+        <!-- Developer 3 -->
+        <div class="team-card">
+            <img src="mj.jpg" alt="Developer 3">
+            <h3>NAVARETE, MJ</h3>
+            <p>Parapadyak</p>
+        </div>
+
+        <!-- Developer 4 -->
+        <div class="team-card">
+            <img src="joe.jpg" alt="Developer 4">
+            <h3>PALINGKOD, ZANJOE C.</h3>
+            <p>...</p>
+        </div>
+
+        <!-- Developer 5 -->
+        <div class="team-card">
+            <img src="tin.jpg" alt="Developer 5">
+            <h3>BOBIS, JUSTIN</h3>
+            <p>...</p>
+        </div>
+
+        <!-- Developer 6 -->
+        <div class="team-card">
+            <img src="jov.jpg" alt="Developer 6">
+            <h3>GARCIA, JOVELYN</h3>
+            <p>...</p>
+        </div>
+
+        <!-- Developer 7 -->
+        <div class="team-card">
+            <img src="da.jpg" alt="Developer 7">
+            <h3>ALLORDE, DARYLLE</h3>
+            <p>...</p>
+        </div>
+
+    </div>
+    <br><br><br><br>
+</center>
+</section>
+
+    <!-- MISSION & VISION -->
+
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter">
+    <br>
+    <h2>Join Our Fashion Community</h2>
+    <p>Subscribe and receive updates about new arrivals and exclusive discounts.</p>
+
+    <form class="newsletter-form">
+      <input type="email" placeholder="Enter your email address">
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contact">
+    <div class="footer-content">
+      <div class="footer-box">
+        <h3>AC.LUXE Bags</h3>
+        <p>
+          Premium fashion bags designed to elevate your confidence and style every day.
+        </p>
+
+        <div class="socials">
+          <a href="https://www.facebook.com/caneo.amie" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+          <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-box">
+        <h3>Quick Links</h3>
+        <a href="#home">Home</a><br>
+        <a href="#products">Products</a><br>
+        <a href="#reviews">Reviews</a><br>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-box">
+        <h3>Customer Service</h3>
+        <a href="#">Shipping Policy</a><br>
+        <a href="#">Return Policy</a><br>
+        <a href="#">Terms & Conditions</a><br>
+        <a href="#">Privacy Policy</a>
+      </div>
+
+      <div class="footer-box">
+        <h3>Contact</h3>
+        <p>Email: support@ac.luxe.com</p>
+        <p>Phone: +63 912 345 6789</p>
+        <p>Location: Philippines</p>
+      </div>
+    </div>
+
+    <div class="copyright">
+      © 2026 Ac.Luxe Bags — All Rights Reserved.
+    </div>
+  </footer>
+
+  <script>
+    // Add to Cart Animation
+    const cartButtons = document.querySelectorAll('.cart-btn');
+
+    cartButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        button.innerHTML = '<i class="fas fa-check"></i>';
+        button.style.background = '#8b5cf6';
+        button.style.color = '#fff';
+
+        setTimeout(() => {
+          button.innerHTML = '<i class="fas fa-shopping-cart"></i>';
+          button.style.background = '';
+          button.style.color = '';
+        }, 1500);
+      });
+    });
+
+    // Newsletter Alert
+    const form = document.querySelector('.newsletter-form');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('Thank you for subscribing to AC.LUXE Bags!');
+    });
+
+const searchInput = document.getElementById("searchInput");
+const products = document.querySelectorAll(".product-card");
+
+searchInput.addEventListener("keyup", () => {
+
+  const searchValue = searchInput.value.toLowerCase();
+
+  products.forEach(product => {
+
+    const productName = product.textContent.toLowerCase();
+
+    if(productName.includes(searchValue)){
+      product.style.display = "block";
+    } else {
+      product.style.display = "none";
+    }
+
+    
+  });
+
+});
+  </script>
+
+</body>
+</html>
